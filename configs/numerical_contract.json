@@ -1,0 +1,40 @@
+{
+  "scope": "CP100 lineage; do not infer KC100 or PatchCore producer runtimes from this record",
+  "native_distance": {
+    "torch": "2.10.0+cu128",
+    "torch_cuda_build": "12.8",
+    "device": "Linux H100 80GB HBM3",
+    "numpy": "2.1.3",
+    "opencv": "4.12.0",
+    "dtype": "float32",
+    "matmul_precision": "highest",
+    "TF32": false,
+    "autocast": false,
+    "query_chunk": 4096,
+    "bank_chunk": 100000,
+    "image_batch": 8,
+    "formula": "(qnorm[:,None]+banknorm[None,:]-2.0*(query@bank.T)).clamp_min(0)",
+    "reduction": "global min over bank, sqrt, divide by sqrt1280, then FP32 layer mean"
+  },
+  "dense_reference": {
+    "execution": "Linux CPU",
+    "torch_build": "2.9.1+cu128",
+    "numpy": "2.1.3",
+    "opencv": "4.12.0",
+    "resize": "bilinear align_corners=False; frozen CPU export"
+  },
+  "local_evaluator": {
+    "execution": "Windows CPU",
+    "torch": "2.10.0+cpu",
+    "numpy": "2.1.3",
+    "opencv": "4.12.0",
+    "resize": "portable_frozen_linux_torch291",
+    "ranking": "float16"
+  },
+  "bank_geometry": {
+    "dtype": "float64",
+    "distance": "Euclidean/sqrt1280",
+    "all_pairs_exhaustive": true
+  },
+  "caveat": "A subset-mean follow-up shares native A controls but has a different score reduction; its group average is not the CP100 score used here."
+}

@@ -1,0 +1,30 @@
+{
+  "macro": [
+    {
+      "method": "CP100",
+      "pixel_auroc": 0.9312396696851966,
+      "pauroc_005": 0.8427288627466252,
+      "aupro_005": 0.5168591928064117,
+      "aupro_030": 0.7192575208452505
+    },
+    {
+      "method": "LEARNED",
+      "pixel_auroc": 0.9930930704951166,
+      "pauroc_005": 0.9634871165790082,
+      "aupro_005": 0.9775240498047636,
+      "aupro_030": 0.9952726036943068
+    },
+    {
+      "method": "PROJECTED",
+      "pixel_auroc": 0.9331636671630088,
+      "pauroc_005": 0.8431884390590856,
+      "aupro_005": 0.5202596094548121,
+      "aupro_030": 0.7243794007002948
+    }
+  ],
+  "in_sample_GT_oracle": true,
+  "global_optimum_certified": false,
+  "independent_generalization_claim": false,
+  "fixed_threshold_used": false,
+  "morphology_used": false
+}

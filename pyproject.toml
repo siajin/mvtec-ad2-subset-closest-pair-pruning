@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mvtec-ad2-cp100"
+version = "0.1.0"
+description = "CP100 normal representative selection and research evidence on MVTec AD 2"
+requires-python = ">=3.10"
+dependencies = ["numpy==2.1.3", "torch==2.10.0"]
+
+[project.optional-dependencies]
+evaluation = ["scipy==1.15.3", "opencv-python==4.12.0.88"]
+
+[project.urls]
+Repository = "https://github.com/siajin/mvtec-ad2-cp100"
+
+[tool.setuptools.packages.find]
+include = ["cp100*", "research*"]

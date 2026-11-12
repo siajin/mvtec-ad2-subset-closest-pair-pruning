@@ -1,0 +1,44 @@
+{
+  "initialization": "frozen CP100 bank",
+  "scope": "same public GT used for learning, checkpoint selection and evaluation",
+  "training": {
+    "steps": 2000,
+    "checkpoints": [
+      0,
+      250,
+      500,
+      1000,
+      1500,
+      2000
+    ],
+    "seed": 42,
+    "positive_pixels": 64,
+    "normal_FIT_pixels": 64,
+    "normal_good_pixels": 32,
+    "normal_background_pixels": 32,
+    "hard_background_pixels": 64,
+    "loss_normal_weight": 0.1,
+    "anomaly_margin": 1.5,
+    "rank_margin": 0.1,
+    "gradient_RMS_floor": 1e-06,
+    "gradient_clip_norm": 1.0,
+    "lr_layer_calibration_median_fraction": 0.01,
+    "lr_final_factor": 0.1,
+    "optimizer": "SparseAdam",
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08
+  },
+  "projection": {
+    "candidate_pool": "ALL_FIT",
+    "dtype": "float64",
+    "query_chunk": 512,
+    "unique_fit_ids": 100000,
+    "max_rounds": 128
+  },
+  "checkpoint_selection": "highest actual AU-PRO@0.05 among saved checkpoints; selected step2000 for every category",
+  "post_projection_training": false,
+  "global_optimum_certified": false
+}

@@ -1,0 +1,286 @@
+{
+  "release": "2026-11-12",
+  "self_excluded": true,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 113,
+      "sha256": "8b8ceb6020a204a6de4ae31939e1e2b61bb43abd97da37569359fd09ae6e2ea2"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 199,
+      "sha256": "9bddf13a099499cd5ae0ca96e272b3c35260e03cf523a6f4cf28458abc34432f"
+    },
+    {
+      "path": "assets/cross_mean_L15.png",
+      "bytes": 347201,
+      "sha256": "5b924df9bb98d0f71804108998af1af85e04c107ab5ac7abc7701085f319f9eb"
+    },
+    {
+      "path": "assets/cross_mean_L23.png",
+      "bytes": 347679,
+      "sha256": "a1ecf5a2f4b35480fad94bde4c31eff2121d01f8be16c12536b16db614b0f3b2"
+    },
+    {
+      "path": "assets/cross_mean_L31.png",
+      "bytes": 327043,
+      "sha256": "682feb77d1e81e9d01b7921fb984642d6ceece4d2e82c7b8dad594080bf129d4"
+    },
+    {
+      "path": "assets/cross_mean_L7.png",
+      "bytes": 401861,
+      "sha256": "f6502002752b95a1923b8197d08e229a6eda296db65fae405169b1abda326aa0"
+    },
+    {
+      "path": "assets/fit_id_overlap.png",
+      "bytes": 159468,
+      "sha256": "9d3650ad07f085a01c4bbdf8be2df03379a07b54ec27d8907f5371110d3e6499"
+    },
+    {
+      "path": "assets/oracle_spacing_all32.png",
+      "bytes": 633181,
+      "sha256": "79a989bd512805567631087528f6847def4a211f120c554b048a35f41eedac90"
+    },
+    {
+      "path": "assets/patchcore_comparison.png",
+      "bytes": 133641,
+      "sha256": "56b1cfc70635b926565f8b94865c31b5b1c6b21e8510a3d1ff8786d0e8436aad"
+    },
+    {
+      "path": "assets/within_bank_spacing_cdf.png",
+      "bytes": 168235,
+      "sha256": "24b6a88c5bbc33461de987faadf9ab26418c3962789df1d9d64bbb40ecc17ca1"
+    },
+    {
+      "path": "CITATION.cff",
+      "bytes": 548,
+      "sha256": "67aade774ec13d7288aeb2f36ae8308fd860c04ec8d143ce962b9d1ef8db9e61"
+    },
+    {
+      "path": "configs/dino_cp100.json",
+      "bytes": 2155,
+      "sha256": "e2f9edeb4b6595ad66d19c67c71ce5ea0959377854dec1b00b3595ef6f43b240"
+    },
+    {
+      "path": "configs/numerical_contract.json",
+      "bytes": 1299,
+      "sha256": "73b5ba10c24709fd787b04cf10dde23f1fdceb5b4de164aef321ded4dfb35048"
+    },
+    {
+      "path": "configs/oracle_diagnostic.json",
+      "bytes": 1099,
+      "sha256": "3b24d7dab48355a36706fd8064c96763e24397258244b668b82583a0bf6b7ad8"
+    },
+    {
+      "path": "cp100/__init__.py",
+      "bytes": 176,
+      "sha256": "9ae5fc30f28a3988b5e0e24dea349653a6099f522c5315256a3b240c8fec6575"
+    },
+    {
+      "path": "cp100/__main__.py",
+      "bytes": 3208,
+      "sha256": "597a2dc8d93c7d398c64a34e6ded26fc8627a1a5ea4702f1be9f2f9ff4a094c5"
+    },
+    {
+      "path": "cp100/scoring.py",
+      "bytes": 1565,
+      "sha256": "64f1344db37a542ccd1458e3b2eb1ac8f06f7be9120dfe4893bcbf99f480e9d3"
+    },
+    {
+      "path": "cp100/selection.py",
+      "bytes": 3204,
+      "sha256": "10e6e118e2e3f0ad864e50b9b3a636031b418e7be750ab168ec59bcd8ca37f45"
+    },
+    {
+      "path": "docs/EVALUATION.md",
+      "bytes": 4170,
+      "sha256": "c5eb7aee17ff4f7fc38016103955b5738c11354e08a7a315c2bdf01ac0b925db"
+    },
+    {
+      "path": "docs/LIMITATIONS.md",
+      "bytes": 2365,
+      "sha256": "111b833a1327eba929a649eb7f0396e9d480789b818868ed374c23b6d87d747a"
+    },
+    {
+      "path": "docs/METHOD.md",
+      "bytes": 5489,
+      "sha256": "97595cfcd4a4328fcdc8a2dd95c138e195255ae0c2a1b0f8e1757919fa16b0a3"
+    },
+    {
+      "path": "docs/ORACLE_ANALYSIS.md",
+      "bytes": 5802,
+      "sha256": "a2c7f034495ed9d337a080a6d421af2e1160114a26f098f99a3774a10a4740fd"
+    },
+    {
+      "path": "docs/PATCHCORE.md",
+      "bytes": 3369,
+      "sha256": "bb70307596db8e3c7ee2014eaea835d3e495d2bbbebf9533c86c78bf551f50c9"
+    },
+    {
+      "path": "docs/RELATED_WORK.md",
+      "bytes": 3146,
+      "sha256": "7b6e732931240b05e3c333424f5eb94aa8d749e4d7c66147521c55195be57e40"
+    },
+    {
+      "path": "docs/RELEASE_SCOPE.md",
+      "bytes": 1098,
+      "sha256": "77b2f285757fb98771c41a115e9dff5dc8533454ae5e4f1e648bc0a67e110c2a"
+    },
+    {
+      "path": "docs/REPRODUCIBILITY.md",
+      "bytes": 4820,
+      "sha256": "e972568d347c711991943901b59a5be4be2a5cc0c759cda51655158a77d63cf1"
+    },
+    {
+      "path": "provenance/SOURCE_ARTIFACTS.json",
+      "bytes": 11017,
+      "sha256": "44107c13aa56ac4c0bfa9cac1b668cf868674ef1a3ca401ee938ea93c24bf231"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 537,
+      "sha256": "d6ecdc13c3e7ad14e39f81dc0a640b6d7197274f015d7a3b1606b59890c9c444"
+    },
+    {
+      "path": "README.md",
+      "bytes": 20363,
+      "sha256": "822f4151d07190c458fd3b53361698b8a8f19cc3ac1aba0048d469e9b27b2db0"
+    },
+    {
+      "path": "research/__init__.py",
+      "bytes": 78,
+      "sha256": "24782069bc11a729610211951b88e3e0c3e66e638e792945483406a79b5fe431"
+    },
+    {
+      "path": "research/cp100/__init__.py",
+      "bytes": 36,
+      "sha256": "d2e93a2d38ac8c369dea6f5a1229380dacf290d940ee90d091abb7e665707d8e"
+    },
+    {
+      "path": "research/cp100/cp_select.py",
+      "bytes": 16097,
+      "sha256": "e16d9547f833024ba55f045305fabe07074ed4697c3cf22323ad4bbb8e8debe8"
+    },
+    {
+      "path": "research/cp100/finalize_select.py",
+      "bytes": 4224,
+      "sha256": "aa248cf26a4d294372012bc45e6549c05cc2dc1a1f2d5c619dcf7549bfe721c1"
+    },
+    {
+      "path": "research/cp100/predict.py",
+      "bytes": 11076,
+      "sha256": "6419e75435aae93eaefdea09c641ce299a3cd7ed54f08c43426c2c9958890dba"
+    },
+    {
+      "path": "research/geometry/__init__.py",
+      "bytes": 49,
+      "sha256": "12c57431ce7fbb76b9966e8b901e6ff30ff6dd9f94c35705fde1f29bacdc84ed"
+    },
+    {
+      "path": "research/geometry/cross_core.py",
+      "bytes": 3530,
+      "sha256": "07e3c4d0ebeb75df35c43c26c2c3072ceab66ecd6feee37b6f26e5100d9dc6af"
+    },
+    {
+      "path": "research/oracle/__init__.py",
+      "bytes": 72,
+      "sha256": "d23f1b9c2bbea4056c01e8b7cd3ba44cca456e2264c7cc7c69d7d3074fe9b9d6"
+    },
+    {
+      "path": "research/oracle/bilinear_frozen_linux_torch291.py",
+      "bytes": 2390,
+      "sha256": "405978ffad23e1e00935cf7f97dba19dba62da2f5cdf76df102e9590044d2d75"
+    },
+    {
+      "path": "research/oracle/learning_core.py",
+      "bytes": 5890,
+      "sha256": "1a3bfe4c1794cdf28c3fbd6f68101c9b684f4b8f94611cca828fc613dab8f379"
+    },
+    {
+      "path": "research/oracle/metrics_core.py",
+      "bytes": 3533,
+      "sha256": "b13f303d9d9e5c1b52d5b9b76f87ddcc484f609440acd6ed63f955f6fdecd071"
+    },
+    {
+      "path": "results/dino/per_category.csv",
+      "bytes": 3112,
+      "sha256": "328b66b8e5e988f83a8a0ff2ccf1982c7501ac012b365bfedeb202063eed5572"
+    },
+    {
+      "path": "results/dino/performance_macro.csv",
+      "bytes": 1118,
+      "sha256": "89d1ec93125b5718a6dc09358afc4cbcd393186effba10d62ea37c2ee83c8d5c"
+    },
+    {
+      "path": "results/geometry/cross_directional_1344.csv",
+      "bytes": 235716,
+      "sha256": "026992f3b084c0c4bbb0f8fba2c37be7ff3f51465e3d0558d639a2e7832e648b"
+    },
+    {
+      "path": "results/geometry/cross_pairs_672.csv",
+      "bytes": 75453,
+      "sha256": "88c7ca8016e43f4417c7cfc7f465b9dc781b789f3bfa2b49b615369a3e64aa59"
+    },
+    {
+      "path": "results/geometry/id_overlap_per_bank.csv",
+      "bytes": 44420,
+      "sha256": "b1416adbe7f4286aa84b8256ab750668038b137a5a381e0e14657e95813270e3"
+    },
+    {
+      "path": "results/geometry/id_overlap_summary.csv",
+      "bytes": 1179,
+      "sha256": "1fbd85de5144cbe53182b414cdb03b4a5d3fc53f5b5ec772e3a8be241950ed0b"
+    },
+    {
+      "path": "results/geometry/within_bank_spacing_cdf_per_bank.csv",
+      "bytes": 32407,
+      "sha256": "59b0e409ddb749c31c0dc5973a8eef8f19050bc614a1c0daa42f968c1ac3b4e2"
+    },
+    {
+      "path": "results/geometry/within_bank_spacing_cdf_summary.csv",
+      "bytes": 1120,
+      "sha256": "1ee30e6b21191534abd86a0c5bb986080aba73f1c32383c2eeafa3aaa9237a44"
+    },
+    {
+      "path": "results/oracle/macro.json",
+      "bytes": 788,
+      "sha256": "99f74838015aa3b32d1cfba734fdf9a13d15678fb20be28afafe2c8cf139fb7e"
+    },
+    {
+      "path": "results/oracle/movement_summary.json",
+      "bytes": 37136,
+      "sha256": "9f18a3b83680aab00e933b25d3f8a0f2bf84a9d2541453b59dd6a3f243b83857"
+    },
+    {
+      "path": "results/oracle/per_category.csv",
+      "bytes": 3174,
+      "sha256": "6990e4e9296a3e34d41cdc4d87d49a10b708eca687d1a470e42d3dc740581bbf"
+    },
+    {
+      "path": "results/patchcore/macro.json",
+      "bytes": 706,
+      "sha256": "9bbe6d3df6bcde68daf048980ab1770fd9b06e17ec593ee66c72bda1b32b8aea"
+    },
+    {
+      "path": "results/patchcore/per_category.csv",
+      "bytes": 3660,
+      "sha256": "644c5edd26a238b1dac89ebfdfbd42cde9dd00dbca6c8ce59a482ff6d9673c7f"
+    },
+    {
+      "path": "tests/test_cp100.py",
+      "bytes": 2944,
+      "sha256": "add9c94ef97ffd4c7df12168efad553ad0a06ebaa6479990746bceb8ceead320"
+    },
+    {
+      "path": "tools/summarize_results.py",
+      "bytes": 2914,
+      "sha256": "4f540fd181aec1d5834aede178ca51ea3efea5d9117a05824fb3f747f69b354c"
+    },
+    {
+      "path": "tools/verify_release.py",
+      "bytes": 933,
+      "sha256": "e34e3db87f6e65635cdbaddc4c7adc941abbf2b2910717d15a405cc516517c11"
+    }
+  ]
+}

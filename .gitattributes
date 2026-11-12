@@ -1,0 +1,5 @@
+* text=auto eol=lf
+research/**/*.py -text
+results/**/*.csv -text
+results/patchcore/macro.json -text
+*.png binary

@@ -1,0 +1,98 @@
+{
+  "categories": [
+    "can",
+    "fabric",
+    "fruit_jelly",
+    "rice",
+    "sheet_metal",
+    "vial",
+    "wallplugs",
+    "walnuts"
+  ],
+  "layers": [
+    7,
+    15,
+    23,
+    31
+  ],
+  "feature_dimension": 1280,
+  "cache_storage": "float16",
+  "selection_compute": "float32",
+  "normalization": null,
+  "representatives_per_layer": 100000,
+  "subset_iterations": 100,
+  "representatives_per_subset": 1000,
+  "candidate_subset_size": "floor(N_FIT_tokens/100)",
+  "candidate_sampling": "RandomState(42).choice from IDs not yet selected; rejected candidates may reappear",
+  "round_remove_fraction": 0.2,
+  "pruning_query_chunk": 2048,
+  "score": "global exhaustive raw L2 / sqrt(1280), K=1, four-layer FP32 mean",
+  "subset_score_average": false,
+  "query_chunk": 4096,
+  "bank_chunk": 100000,
+  "image_batch": 8,
+  "seed": 42,
+  "split_counts": {
+    "can": {
+      "fit": 360,
+      "calibration": 52,
+      "public": 162,
+      "public_bad": 90,
+      "public_good": 72
+    },
+    "fabric": {
+      "fit": 338,
+      "calibration": 49,
+      "public": 156,
+      "public_bad": 90,
+      "public_good": 66
+    },
+    "fruit_jelly": {
+      "fit": 230,
+      "calibration": 33,
+      "public": 80,
+      "public_bad": 60,
+      "public_good": 20
+    },
+    "rice": {
+      "fit": 273,
+      "calibration": 40,
+      "public": 132,
+      "public_bad": 90,
+      "public_good": 42
+    },
+    "sheet_metal": {
+      "fit": 119,
+      "calibration": 18,
+      "public": 114,
+      "public_bad": 90,
+      "public_good": 24
+    },
+    "vial": {
+      "fit": 254,
+      "calibration": 37,
+      "public": 140,
+      "public_bad": 105,
+      "public_good": 35
+    },
+    "wallplugs": {
+      "fit": 256,
+      "calibration": 37,
+      "public": 150,
+      "public_bad": 90,
+      "public_good": 60
+    },
+    "walnuts": {
+      "fit": 378,
+      "calibration": 54,
+      "public": 150,
+      "public_bad": 90,
+      "public_good": 60
+    }
+  },
+  "output_grid": "H//4,W//4",
+  "GT_resize": "OpenCV INTER_LINEAR then >0",
+  "ranking_dtype": "float16",
+  "threshold_and_morphology": "not used in the rank-only main comparison",
+  "alignment_used": false
+}
