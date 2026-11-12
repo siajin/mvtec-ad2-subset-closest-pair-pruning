@@ -1,4 +1,4 @@
-"""Use ``python -m cp100 --help`` for the portable feature-array interface."""
+"""Use ``python -m scpp --help`` for the portable feature-array interface."""
 import argparse
 import hashlib
 import json
@@ -22,7 +22,7 @@ def digest(path):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest='command', required=True)
-    select = sub.add_parser('select', help='CP100 selection from an ordered frozen float16 FIT pool')
+    select = sub.add_parser('select', help='SCPP selection from an ordered frozen float16 FIT pool')
     select.add_argument('--features', type=Path, required=True)
     select.add_argument('--target', type=int, default=100000)
     select.add_argument('--subsets', type=int, default=100)

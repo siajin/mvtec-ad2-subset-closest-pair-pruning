@@ -1,5 +1,5 @@
 {
-  "initialization": "frozen CP100 bank",
+  "initialization": "frozen SCPP bank",
   "scope": "same public GT used for learning, checkpoint selection and evaluation",
   "training": {
     "steps": 2000,

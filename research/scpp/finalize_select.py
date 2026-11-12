@@ -77,7 +77,7 @@ def main() -> None:
     summary_path = OUT / "SELECTION_SUMMARY.json"
     atomic_json(summary_path, summaries)
     atomic_json(OUT / "C0_SELECT_COMPLETE.json", {
-        "status": "complete", "method": "CP100-subset", "unit_count": len(units),
+        "status": "complete", "method": "SCPP-subset", "unit_count": len(units),
         "categories": list(CATEGORIES), "layers": list(LAYERS), "gt_opened": False,
         "units": units, "selection_summary_sha256": sha256(summary_path),
     })

@@ -3,14 +3,14 @@ import unittest
 import numpy as np
 import torch
 
-from cp100 import select_representatives
-from cp100.scoring import nearest_scores
-from research.cp100.cp_select import prune_subset
+from scpp import select_representatives
+from scpp.scoring import nearest_scores
+from research.scpp.cp_select import prune_subset
 from research.geometry.cross_core import synthetic_control as cross_control
 from research.oracle.learning_core import synthetic_control as oracle_control
 
 
-class CP100Controls(unittest.TestCase):
+class SCPPControls(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         torch.set_num_threads(2)

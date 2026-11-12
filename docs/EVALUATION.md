@@ -27,9 +27,9 @@ SuperADD paper-reported8범주 pAUROC83.93%, fixed F162.61%; can은51.61%,0.00%�
 
 ## 역사적 비교가 남기는 수치 한계
 
-DINO의 기존5방법은 검증된 같은 범주의 역사 score에서 재집계했다. 두 오라클은 독립 CPU 평가를 했으며 CP100 anchor는8범주 모두 기존 pAUROC/AU-PRO와 exact 일치했다. 이것은 모든7방법을 같은 runtime에서 새로 추론한 실험이라는 뜻이 아니다.
+DINO의 기존5방법은 검증된 같은 범주의 역사 score에서 재집계했다. 두 오라클은 독립 CPU 평가를 했으며 SCPP anchor는8범주 모두 기존 pAUROC/AU-PRO와 exact 일치했다. 이것은 모든7방법을 같은 runtime에서 새로 추론한 실험이라는 뜻이 아니다.
 
-특히 KC100의 frozen native 산출물은 같은 source·patch·최근접 FIT ID에서도 CP와 일부 값이 달랐다. can calibration L31에서 관측한 최대 차이는 raw L2/√1280 단위0.0095100403이다. Torch/CUDA kernel 하나를 원인으로 특정하지 않았고 새 허용 오차로 사용하지 않는다. 기존 CP runtime을 KC producer runtime으로 추정하지 않는다. KC100의 이 범위 AU-PRO 기록은 없어 N/A다.
+특히 KC100의 frozen native 산출물은 같은 source·patch·최근접 FIT ID에서도 CP와 일부 값이 달랐다. can calibration L31에서 관측한 최대 차이는 raw L2/√1280 단위0.0095100403이다. Torch/CUDA kernel 하나를 원인으로 특정하지 않았고 새 허용 오차로 사용하지 않는다. 기존 SCPP runtime을 KC producer runtime으로 추정하지 않는다. KC100의 이 범위 AU-PRO 기록은 없어 N/A다.
 
 ## PatchCore 별도 계약
 

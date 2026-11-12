@@ -2,7 +2,7 @@
 
 ## 목적과 통제
 
-DINO에서 관측한 CP100을 다른 특징 공간에 적용했을 때 효과를 확인한다. 두 방법에 공통인 WRN50-2 특징을 한 번 추출한 뒤 대표 선택 규칙만 바꿨다.
+DINO에서 관측한 SCPP를 다른 특징 공간에 적용했을 때 효과를 확인한다. 두 방법에 공통인 WRN50-2 특징을 한 번 추출한 뒤 대표 선택 규칙만 바꿨다.
 
 | 항목 | 공통 조건 |
 |---|---|
@@ -12,7 +12,7 @@ DINO에서 관측한 CP100을 다른 특징 공간에 적용했을 때 효과를
 | 선택 공간 | 같은 1024→128D random linear projection, 정규화 없음 |
 | 대표 예산 | 각 100,000개의 실제 FIT 특징 |
 | coreset | 공식 approximate greedy, 시작점10개 |
-| CP100 | 100개 부분집합 × 1000개, closest-pair pruning |
+| SCPP | 100개 부분집합 × 1000개, closest-pair pruning |
 | 점수 | 원본 1024D bank의 exhaustive FP32 squared-L2 1NN |
 | 분할 | train FIT 2528 / 공식 정상 validation 302 / public good 379 + bad 705 |
 | 평가 | 원본 quarter grid, GT INTER_LINEAR>0, 8-connected component, FP32 score |
@@ -24,7 +24,7 @@ DINO에서 관측한 CP100을 다른 특징 공간에 적용했을 때 효과를
 
 모든 수치는%이며 각 범주별로 계산한다.
 
-| 범주 | CP100 | coreset100k | 차이(%p) |
+| 범주 | SCPP | coreset100k | 차이(%p) |
 |---|---:|---:|---:|
 | can |4.6594|4.4617|+0.1977|
 | fabric |8.9598|6.9326|+2.0272|
@@ -44,7 +44,7 @@ Q99 F1은 정상 validation pixel score의 99th percentile로 threshold를 정�
 
 ## 시간과 수치 검증의 범위
 
-8범주 합계 대표 선택+bank 저장은 CP 40.79초, coreset 178.87초였다. 캐시 기반 1NN+저장은 13.20초, 13.16초다. 전체 generation 378.43초에는 공유 특징 추출·양쪽 선택·예측·해시가 포함된다. 별도 반복 benchmark나 end-to-end latency 측정이 아니다.
+8범주 합계 대표 선택+bank 저장은 SCPP 40.79초, coreset 178.87초였다. 캐시 기반 1NN+저장은 13.20초, 13.16초다. 전체 generation 378.43초에는 공유 특징 추출·양쪽 선택·예측·해시가 포함된다. 별도 반복 benchmark나 end-to-end latency 측정이 아니다.
 
 역사 검증은 작은 CPU/H100 고정 입력에서 공식 coreset의 ID 일치, 실제 표본의 직접 FP64 거리 대조, 실제 can 전체 public pixel에서 sklearn metric 대조, 16조건 confusion count와 macro 재계산을 포함했다. 표본 거리 검증을 모든 query의 bitwise 검증으로 확대하지 않는다.
 

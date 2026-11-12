@@ -313,7 +313,7 @@ def run_unit(category: str, layer: int, device: str, query_chunk: int,
             artifacts.append({"name": path.name, "bytes": path.stat().st_size, "sha256": sha256(path)})
         atomic_json(unit / "C0_SELECT_COMPLETE.json", {
             "status": "complete", "category": category, "layer": layer,
-            "method": "CP100-subset", "candidate_count": count, "selected_count": TARGET,
+            "method": "SCPP-subset", "candidate_count": count, "selected_count": TARGET,
             "dimension": DIM, "seed": SEED, "iterations": ITERATIONS,
             "target_per_subset": TARGET_PER_SUBSET, "round_remove_fraction": ROUND_REMOVE_FRACTION,
             "distance": "raw1280 FP32 squared Euclidean for ordering", "normalize": False,

@@ -2,11 +2,11 @@
 
 ## 왜 오라클을 만들었는가
 
-정상 표본만 고르는 selector와, 결함 GT를 보고 prototype 좌표를 움직이는 최적화는 다른 제약 문제다. 후자의 결과를 진단 도구로 사용해 CP100 대표가 어디에 놓이는지 확인한다. 여기서 oracle은 편의상 붙인 이름이며 수학적 global optimum 또는 검출 성능의 certified upper bound가 아니다.
+정상 표본만 고르는 selector와, 결함 GT를 보고 prototype 좌표를 움직이는 최적화는 다른 제약 문제다. 후자의 결과를 진단 도구로 사용해 SCPP 대표가 어디에 놓이는지 확인한다. 여기서 oracle은 편의상 붙인 이름이며 수학적 global optimum 또는 검출 성능의 certified upper bound가 아니다.
 
 ## 학습형과 실제 FIT 치환형
 
-각 범주 네 층의 CP100 bank로 초기화한다. backbone은 고정하고 prototype만 FP32로 학습한다. 매 step의 결함 component 균등 표본64개, normal FIT64개, public good32개, bad 안의 normal background32개, hard background64개를 사용한다. normalized score를 $u$, defect 표본을 $A$, 정상 표본을 $N$이라 하면 구현된 loss는 다음과 같다.
+각 범주 네 층의 SCPP bank로 초기화한다. backbone은 고정하고 prototype만 FP32로 학습한다. 매 step의 결함 component 균등 표본64개, normal FIT64개, public good32개, bad 안의 normal background32개, hard background64개를 사용한다. normalized score를 $u$, defect 표본을 $A$, 정상 표본을 $N$이라 하면 구현된 loss는 다음과 같다.
 
 $$L=0.1\,\operatorname{mean}_{n\in N}u_n^2+
 \operatorname{mean}_{a\in A}\max(0,1.5-u_a)^2+
@@ -18,7 +18,7 @@ native forward는 FP32 hard-min을 유지하고 선택된 prototype row에 spars
 
 ## 결과를 읽는 순서
 
-| 8범주 평균 (%) | CP100 | 학습형 | 실제 FIT 치환형 |
+| 8범주 평균 (%) | SCPP | 학습형 | 실제 FIT 치환형 |
 |---|---:|---:|---:|
 | pixel AUROC | 93.1240 | 99.3093 | 93.3164 |
 | pAUROC@0.05 | 84.2729 | 96.3487 | 84.3188 |
@@ -26,12 +26,12 @@ native forward는 FP32 hard-min을 유지하고 선택된 prototype row에 spars
 
 SuperADD paper-reported 참고는 별도다:8범주 pAUROC83.93%, fixed F162.61%, AU-PRO 미제공. 이 표의 oracle과 직접 순위·차이를 계산하지 않는다.
 
-1. **성능:** 자유좌표 학습의 in-sample 성능은 높지만 실제 FIT 치환 후 CP100에 가까워진다.
-2. **ID:** CP100와 치환형의 FIT ID 공유 비율은32bank 평균99.95078125%다. 자유좌표에는 원본 FIT ID가 없어N/A다.
+1. **성능:** 자유좌표 학습의 in-sample 성능은 높지만 실제 FIT 치환 후 SCPP에 가까워진다.
+2. **ID:** SCPP와 치환형의 FIT ID 공유 비율은32bank 평균99.95078125%다. 자유좌표에는 원본 FIT ID가 없어N/A다.
 3. **움직임:** prototype 이동량/출발CP의 행별 내부NN간격 비율을 bank 안에서 median한 뒤32bank median은 약0.000190이다. 이동량0인 prototype 평균은35.1386%다. 이는 다른 bank와의 최적 matching 비용이 아니다.
-4. **위치:** 학습형과 치환형은 CP100와 각각99.98800%,99.98722%의 CP방향 상호NN 비율을 보인다. 높은 상호NN이 동일 좌표·동일 score를 뜻하지 않는다.
+4. **위치:** 학습형과 치환형은 SCPP와 각각99.98800%,99.98722%의 CP방향 상호NN 비율을 보인다. 높은 상호NN이 동일 좌표·동일 score를 뜻하지 않는다.
 
-초기값이 CP100이고 상당수 이동량이 작기 때문에 치환형이 CP로 돌아오기 쉽다. 따라서 이 결과를 selector와 무관하게 얻은 정답 bank와의99.95% 일치로 표현하지 않는다. 다른 초기값·최적화·제약에서의 결과는 검증하지 않았다.
+초기값이 SCPP이고 상당수 이동량이 작기 때문에 치환형이 CP로 돌아오기 쉽다. 따라서 이 결과를 selector와 무관하게 얻은 정답 bank와의99.95% 일치로 표현하지 않는다. 다른 초기값·최적화·제약에서의 결과는 검증하지 않았다.
 
 ## 유사도의 네 정의
 

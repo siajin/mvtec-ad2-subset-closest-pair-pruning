@@ -1,250 +1,307 @@
 {
   "release": "2026-11-12",
-  "source_paths": "logical roots; local account/operational paths omitted",
+  "source_paths": "opaque source IDs; original hashes retained; private source-location ledger archived locally",
   "artifacts": [
     {
       "source_root": "canonical",
-      "source": "work/closest_pair_pruning_100k_8cat_v1/cp_select.py",
       "sha256": "e16d9547f833024ba55f045305fabe07074ed4697c3cf22323ad4bbb8e8debe8",
       "bytes": 16097,
-      "purpose": "research/cp100/cp_select.py",
-      "public_copy": "research/cp100/cp_select.py"
+      "purpose": "research/scpp/cp_select.py",
+      "source_id": "source-001",
+      "public_derivative": "research/scpp/cp_select.py",
+      "transformation": "naming and labels only; original source SHA retained",
+      "published_sha256": "4a40b541720c69af412366c60c40124969945aac070583c46762aec09b454170",
+      "published_bytes": 16096
     },
     {
       "source_root": "canonical",
-      "source": "work/closest_pair_pruning_100k_8cat_v1/predict.py",
       "sha256": "6419e75435aae93eaefdea09c641ce299a3cd7ed54f08c43426c2c9958890dba",
       "bytes": 11076,
-      "purpose": "research/cp100/predict.py",
-      "public_copy": "research/cp100/predict.py"
+      "purpose": "research/scpp/predict.py",
+      "source_id": "source-002",
+      "public_derivative": "research/scpp/predict.py",
+      "transformation": "naming and labels only; original source SHA retained",
+      "published_sha256": "4a979a3b21dbd68237ea042cc07a54e8394f42011fb8a928851b3cc0d8411264",
+      "published_bytes": 11074
     },
     {
       "source_root": "canonical",
-      "source": "work/closest_pair_pruning_100k_8cat_v1/finalize_select.py",
       "sha256": "aa248cf26a4d294372012bc45e6549c05cc2dc1a1f2d5c619dcf7549bfe721c1",
       "bytes": 4224,
-      "purpose": "research/cp100/finalize_select.py",
-      "public_copy": "research/cp100/finalize_select.py"
+      "purpose": "research/scpp/finalize_select.py",
+      "source_id": "source-003",
+      "public_derivative": "research/scpp/finalize_select.py",
+      "transformation": "naming and labels only; original source SHA retained",
+      "published_sha256": "eb8801d672e0f9fe5ce491fefbeffeaf06d1236ee54794a938d537dddb9fcf6b",
+      "published_bytes": 4223
     },
     {
       "source_root": "final_artifacts",
-      "source": "gt_oracle_learned_and_projected_8cat_v1/learning_core.py",
       "sha256": "1a3bfe4c1794cdf28c3fbd6f68101c9b684f4b8f94611cca828fc613dab8f379",
       "bytes": 5890,
       "purpose": "research/oracle/learning_core.py",
-      "public_copy": "research/oracle/learning_core.py"
+      "source_id": "source-004",
+      "public_derivative": "research/oracle/learning_core.py",
+      "transformation": "naming and labels only; original source SHA retained",
+      "published_sha256": "1a3bfe4c1794cdf28c3fbd6f68101c9b684f4b8f94611cca828fc613dab8f379",
+      "published_bytes": 5890
     },
     {
       "source_root": "final_artifacts",
-      "source": "gt_oracle_learned_and_projected_8cat_v1/metrics_core.py",
       "sha256": "b13f303d9d9e5c1b52d5b9b76f87ddcc484f609440acd6ed63f955f6fdecd071",
       "bytes": 3533,
       "purpose": "research/oracle/metrics_core.py",
-      "public_copy": "research/oracle/metrics_core.py"
+      "source_id": "source-005",
+      "public_derivative": "research/oracle/metrics_core.py",
+      "transformation": "naming and labels only; original source SHA retained",
+      "published_sha256": "b13f303d9d9e5c1b52d5b9b76f87ddcc484f609440acd6ed63f955f6fdecd071",
+      "published_bytes": 3533
     },
     {
       "source_root": "final_artifacts",
-      "source": "gt_oracle_learned_and_projected_8cat_v1/bilinear_frozen_linux_torch291.py",
       "sha256": "405978ffad23e1e00935cf7f97dba19dba62da2f5cdf76df102e9590044d2d75",
       "bytes": 2390,
       "purpose": "research/oracle/bilinear_frozen_linux_torch291.py",
-      "public_copy": "research/oracle/bilinear_frozen_linux_torch291.py"
+      "source_id": "source-006",
+      "public_derivative": "research/oracle/bilinear_frozen_linux_torch291.py",
+      "transformation": "naming and labels only; original source SHA retained",
+      "published_sha256": "405978ffad23e1e00935cf7f97dba19dba62da2f5cdf76df102e9590044d2d75",
+      "published_bytes": 2390
     },
     {
       "source_root": "final_artifacts",
-      "source": "oracle_all_methods_representative_comparison_v1/cross_core.py",
       "sha256": "07e3c4d0ebeb75df35c43c26c2c3072ceab66ecd6feee37b6f26e5100d9dc6af",
       "bytes": 3530,
       "purpose": "research/geometry/cross_core.py",
-      "public_copy": "research/geometry/cross_core.py"
+      "source_id": "source-007",
+      "public_derivative": "research/geometry/cross_core.py",
+      "transformation": "naming and labels only; original source SHA retained",
+      "published_sha256": "07e3c4d0ebeb75df35c43c26c2c3072ceab66ecd6feee37b6f26e5100d9dc6af",
+      "published_bytes": 3530
     },
     {
       "source_root": "final_artifacts",
-      "source": "oracle_all_methods_representative_comparison_v1/LOCAL_FULL/METHOD_COMPARISON_8CAT.csv",
       "sha256": "89d1ec93125b5718a6dc09358afc4cbcd393186effba10d62ea37c2ee83c8d5c",
       "bytes": 1118,
       "purpose": "results/dino/performance_macro.csv",
-      "public_copy": "results/dino/performance_macro.csv"
+      "source_id": "source-008",
+      "public_derivative": "results/dino/performance_macro.csv",
+      "transformation": "naming and labels only; original source SHA retained",
+      "published_sha256": "cbe951b8d6dc6a3c99150f1e4619ea99eae59185008c6830e250671852656e5a",
+      "published_bytes": 1113
     },
     {
       "source_root": "final_artifacts",
-      "source": "oracle_all_methods_representative_comparison_v1/CROSS_FULL/CROSS_DIRECTIONAL_1344.csv",
       "sha256": "026992f3b084c0c4bbb0f8fba2c37be7ff3f51465e3d0558d639a2e7832e648b",
       "bytes": 235716,
       "purpose": "results/geometry/cross_directional_1344.csv",
-      "public_copy": "results/geometry/cross_directional_1344.csv"
+      "source_id": "source-009",
+      "public_derivative": "results/geometry/cross_directional_1344.csv",
+      "transformation": "naming and labels only; original source SHA retained",
+      "published_sha256": "07ddb95e7c2679358dd788d7d1622f0287e7d144ae864756773f9102d66227cf",
+      "published_bytes": 234945
     },
     {
       "source_root": "final_artifacts",
-      "source": "oracle_all_methods_representative_comparison_v1/CROSS_FULL/CROSS_PAIRS_672.csv",
       "sha256": "88c7ca8016e43f4417c7cfc7f465b9dc781b789f3bfa2b49b615369a3e64aa59",
       "bytes": 75453,
       "purpose": "results/geometry/cross_pairs_672.csv",
-      "public_copy": "results/geometry/cross_pairs_672.csv"
+      "source_id": "source-010",
+      "public_derivative": "results/geometry/cross_pairs_672.csv",
+      "transformation": "naming and labels only; original source SHA retained",
+      "published_sha256": "075939623be5beced43669a75a6ac1077977e2373b6800c8cfc4b9221f9eaea9",
+      "published_bytes": 75066
     },
     {
       "source_root": "canonical",
-      "source": "work/patchcore_cp100_ad2_phase1_v1/EVAL_REPORT/CATEGORY_METRICS.csv",
       "sha256": "644c5edd26a238b1dac89ebfdfbd42cde9dd00dbca6c8ce59a482ff6d9673c7f",
       "bytes": 3660,
       "purpose": "results/patchcore/per_category.csv",
-      "public_copy": "results/patchcore/per_category.csv"
+      "source_id": "source-011",
+      "public_derivative": "results/patchcore/per_category.csv",
+      "transformation": "naming and labels only; original source SHA retained",
+      "published_sha256": "28cb341bccd1bbc685afe992e61257f4d94d3e2f98ef5106f7c19827938127d8",
+      "published_bytes": 3649
     },
     {
       "source_root": "canonical",
-      "source": "work/patchcore_cp100_ad2_phase1_v1/EVAL_REPORT/MACRO.json",
       "sha256": "9bbe6d3df6bcde68daf048980ab1770fd9b06e17ec593ee66c72bda1b32b8aea",
       "bytes": 706,
       "purpose": "results/patchcore/macro.json",
-      "public_copy": "results/patchcore/macro.json"
+      "source_id": "source-012",
+      "public_derivative": "results/patchcore/macro.json",
+      "transformation": "naming and labels only; original source SHA retained",
+      "published_sha256": "75a421b51f553fa1826407bf2001b96c2b8f12743606e4d01fb83d097bed1c47",
+      "published_bytes": 705
     },
     {
       "source_root": "final_artifacts",
-      "source": "oracle_all_methods_representative_comparison_v1/LOCAL_FULL/LOCAL_RESULT.json",
       "sha256": "11589c7131835fd2f060888d53c8cfb9a89efaf5c25700ddb37582937ef4a620",
       "bytes": 324773,
-      "purpose": "ID overlap and prototype movement statistics"
+      "purpose": "ID overlap and prototype movement statistics",
+      "source_id": "source-013"
     },
     {
       "source_root": "canonical",
-      "source": "work/five_dino_methods_spacing_8cat_v1/PERFORMANCE/PER_CATEGORY.json",
       "sha256": "f7b67bdfa5cd8c7040ab4dda0314ac42754bcfbafda0f5131187626dcec500af",
       "bytes": 10365,
-      "purpose": "historical DINO per-category metrics"
+      "purpose": "historical DINO per-category metrics",
+      "source_id": "source-014"
     },
     {
       "source_root": "final_artifacts",
-      "source": "gt_oracle_learned_and_projected_8cat_v1/EVALUATION/RESULT.json",
       "sha256": "9669184e40f15a23f7afdd0ff949b21a719bcfd9019a5e1f09cf360bdb62bf1b",
       "bytes": 24771,
-      "purpose": "independently evaluated oracle metrics"
+      "purpose": "independently evaluated oracle metrics",
+      "source_id": "source-015"
     },
     {
       "source_root": "final_artifacts",
-      "source": "gt_oracle_learned_and_projected_8cat_v1/CONFIG_PROPOSED.json",
       "sha256": "61742bfabf00237180d310bbbda1461105243e4638013ee328ddecde93efb46e",
       "bytes": 96948,
-      "purpose": "only the final training/scoring/split fields are exported"
+      "purpose": "only the final training/scoring/split fields are exported",
+      "source_id": "source-016"
     },
     {
       "source_root": "final_artifacts",
-      "source": "oracle_all_methods_representative_comparison_v1/LOCAL_FULL/FIT_ID_OVERLAP_MATRIX.png",
       "sha256": "9d3650ad07f085a01c4bbdf8be2df03379a07b54ec27d8907f5371110d3e6499",
       "bytes": 159468,
       "purpose": "assets/fit_id_overlap.png",
-      "public_copy": "assets/fit_id_overlap.png"
+      "source_id": "source-017",
+      "public_derivative": "assets/fit_id_overlap.png",
+      "transformation": "re-rendered from released tables using the current method label; values unchanged",
+      "published_sha256": "511da51dcea9ccf4a6220e98ee4d7f1bc35ae8d5de6f6bf039155c12edcdc8d3",
+      "published_bytes": 218103
     },
     {
       "source_root": "final_artifacts",
-      "source": "oracle_all_methods_representative_comparison_v1/LOCAL_FULL/WITHIN_BANK_SPACING_CDF_MATRIX.png",
       "sha256": "24b6a88c5bbc33461de987faadf9ab26418c3962789df1d9d64bbb40ecc17ca1",
       "bytes": 168235,
       "purpose": "assets/within_bank_spacing_cdf.png",
-      "public_copy": "assets/within_bank_spacing_cdf.png"
+      "source_id": "source-018",
+      "public_derivative": "assets/within_bank_spacing_cdf.png",
+      "transformation": "re-rendered from released tables using the current method label; values unchanged",
+      "published_sha256": "5d9d9392cec6718cb293876730cd07c30bdc31c82aa9523340d6e7db5a493f8b",
+      "published_bytes": 228772
     },
     {
       "source_root": "final_artifacts",
-      "source": "gt_oracle_learned_and_projected_8cat_v1/REPORT/ALL_32_HISTOGRAM.png",
       "sha256": "79a989bd512805567631087528f6847def4a211f120c554b048a35f41eedac90",
       "bytes": 633181,
       "purpose": "assets/oracle_spacing_all32.png",
-      "public_copy": "assets/oracle_spacing_all32.png"
+      "source_id": "source-019",
+      "transformation": "unlinked historical figure archived locally; source retained"
     },
     {
       "source_root": "canonical",
-      "source": "work/patchcore_cp100_ad2_phase1_v1/EVAL_REPORT/PRIMARY_COMPARISON.png",
       "sha256": "56b1cfc70635b926565f8b94865c31b5b1c6b21e8510a3d1ff8786d0e8436aad",
       "bytes": 133641,
       "purpose": "assets/patchcore_comparison.png",
-      "public_copy": "assets/patchcore_comparison.png"
+      "source_id": "source-020",
+      "public_derivative": "assets/patchcore_comparison.png",
+      "transformation": "re-rendered from released tables using the current method label; values unchanged",
+      "published_sha256": "2ab38e4fa9fb2903ae532f9421809e877cad1eb7b625eeda33e21f2ecd7b600e",
+      "published_bytes": 133216
     },
     {
       "source_root": "final_artifacts",
-      "source": "oracle_all_methods_representative_comparison_v1/CROSS_FULL/CROSS_MEAN_L7.png",
       "sha256": "f6502002752b95a1923b8197d08e229a6eda296db65fae405169b1abda326aa0",
       "bytes": 401861,
       "purpose": "assets/cross_mean_L7.png",
-      "public_copy": "assets/cross_mean_L7.png"
+      "source_id": "source-021",
+      "public_derivative": "assets/cross_mean_L7.png",
+      "transformation": "re-rendered from released tables using the current method label; values unchanged",
+      "published_sha256": "30c562d317915adb0959a2280424efed6d9661140a70ec8d4818c9ed9d176ad3",
+      "published_bytes": 225760
     },
     {
       "source_root": "final_artifacts",
-      "source": "oracle_all_methods_representative_comparison_v1/CROSS_FULL/CROSS_MEAN_L15.png",
       "sha256": "5b924df9bb98d0f71804108998af1af85e04c107ab5ac7abc7701085f319f9eb",
       "bytes": 347201,
       "purpose": "assets/cross_mean_L15.png",
-      "public_copy": "assets/cross_mean_L15.png"
+      "source_id": "source-022",
+      "public_derivative": "assets/cross_mean_L15.png",
+      "transformation": "re-rendered from released tables using the current method label; values unchanged",
+      "published_sha256": "00324c34490df9a10d20f9d303dd8c65c6844fe281fc538a8404d7ed6a2ed80b",
+      "published_bytes": 206150
     },
     {
       "source_root": "final_artifacts",
-      "source": "oracle_all_methods_representative_comparison_v1/CROSS_FULL/CROSS_MEAN_L23.png",
       "sha256": "a1ecf5a2f4b35480fad94bde4c31eff2121d01f8be16c12536b16db614b0f3b2",
       "bytes": 347679,
       "purpose": "assets/cross_mean_L23.png",
-      "public_copy": "assets/cross_mean_L23.png"
+      "source_id": "source-023",
+      "public_derivative": "assets/cross_mean_L23.png",
+      "transformation": "re-rendered from released tables using the current method label; values unchanged",
+      "published_sha256": "df8009a184d53b63826af37988f90f1339483bb47d01bed9008aeba5f48f6212",
+      "published_bytes": 201436
     },
     {
       "source_root": "final_artifacts",
-      "source": "oracle_all_methods_representative_comparison_v1/CROSS_FULL/CROSS_MEAN_L31.png",
       "sha256": "682feb77d1e81e9d01b7921fb984642d6ceece4d2e82c7b8dad594080bf129d4",
       "bytes": 327043,
       "purpose": "assets/cross_mean_L31.png",
-      "public_copy": "assets/cross_mean_L31.png"
+      "source_id": "source-024",
+      "public_derivative": "assets/cross_mean_L31.png",
+      "transformation": "re-rendered from released tables using the current method label; values unchanged",
+      "published_sha256": "3a1399799f70f017724aa89698e209ff0996705869edccad4e4958b692744a1c",
+      "published_bytes": 197790
     },
     {
       "source_root": "final_artifacts",
-      "source": "oracle_all_methods_representative_comparison_v1/CROSS_FULL/VALIDATION.json",
       "sha256": "49d832f1d8090c919a76a488117dc2dbb5397dd7d940618afcff54eebef5621a",
       "bytes": 449,
-      "purpose": "historical verification or numerical provenance; hash only"
+      "purpose": "historical verification or numerical provenance; hash only",
+      "source_id": "source-025"
     },
     {
       "source_root": "final_artifacts",
-      "source": "oracle_all_methods_representative_comparison_v1/LOCAL_FULL/LOCAL_VALIDATION.json",
       "sha256": "ee3195b5591b61aa2c1801bc040ade5504c3c268f9b8905bab39e6725e778f7a",
       "bytes": 1185,
-      "purpose": "historical verification or numerical provenance; hash only"
+      "purpose": "historical verification or numerical provenance; hash only",
+      "source_id": "source-026"
     },
     {
       "source_root": "final_artifacts",
-      "source": "gt_oracle_learned_and_projected_8cat_v1/EVALUATION/VALIDATION.json",
       "sha256": "e3b212d5291e2142778e904cc10cd21974154ce4a59700f3ee9e3b6b352decda",
       "bytes": 276,
-      "purpose": "historical verification or numerical provenance; hash only"
+      "purpose": "historical verification or numerical provenance; hash only",
+      "source_id": "source-027"
     },
     {
       "source_root": "final_artifacts",
-      "source": "gt_oracle_learned_and_projected_8cat_v1/REPORT/FINAL_REPORT_VALIDATION.json",
       "sha256": "cad7ed16a79ca62834c6bee8779835e7f7b7554351b1a77bf6c7ddd27298534a",
       "bytes": 240,
-      "purpose": "historical verification or numerical provenance; hash only"
+      "purpose": "historical verification or numerical provenance; hash only",
+      "source_id": "source-028"
     },
     {
       "source_root": "canonical",
-      "source": "work/patchcore_cp100_ad2_phase1_v1/EVAL_REPORT/INDEPENDENT_RESULT_QA.json",
       "sha256": "dbf56b0c4486d7773b4b73e9c793254b103132290dc2d027c3ae27f19ee2e3d5",
       "bytes": 598,
-      "purpose": "historical verification or numerical provenance; hash only"
+      "purpose": "historical verification or numerical provenance; hash only",
+      "source_id": "source-029"
     },
     {
       "source_root": "canonical",
-      "source": "evaluation_protocols/NUMERICAL_REPRODUCIBILITY_V1_KR.md",
       "sha256": "5735398d220587a6227890482404f4254bfc21ff43ac1f6b31fe02fd01da137c",
       "bytes": 10448,
-      "purpose": "historical verification or numerical provenance; hash only"
+      "purpose": "historical verification or numerical provenance; hash only",
+      "source_id": "source-030"
     },
     {
       "source_root": "canonical",
-      "source": "evaluation_protocols/NUMERICAL_RUNTIME_REGISTRY_V1.json",
       "sha256": "52693a0bd31378d1af3bf839548adcd25984ba722a013b9b07cf601284601be4",
       "bytes": 48045,
-      "purpose": "historical verification or numerical provenance; hash only"
+      "purpose": "historical verification or numerical provenance; hash only",
+      "source_id": "source-031"
     },
     {
       "source_root": "canonical",
-      "source": "evaluation_protocols/CP100_KC100_FROZEN_MAP_NUMERICAL_AUDIT_20261110_KR.md",
       "sha256": "79d10ac3f81b2446236c5a4235f2d37b974cf9381c12680dc7219b05ff9bc5bc",
       "bytes": 2839,
-      "purpose": "historical verification or numerical provenance; hash only"
+      "purpose": "historical verification or numerical provenance; hash only",
+      "source_id": "source-032"
     }
   ]
 }

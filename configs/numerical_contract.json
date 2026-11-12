@@ -1,5 +1,5 @@
 {
-  "scope": "CP100 lineage; do not infer KC100 or PatchCore producer runtimes from this record",
+  "scope": "SCPP lineage; do not infer KC100 or PatchCore producer runtimes from this record",
   "native_distance": {
     "torch": "2.10.0+cu128",
     "torch_cuda_build": "12.8",
@@ -36,5 +36,5 @@
     "distance": "Euclidean/sqrt1280",
     "all_pairs_exhaustive": true
   },
-  "caveat": "A subset-mean follow-up shares native A controls but has a different score reduction; its group average is not the CP100 score used here."
+  "caveat": "A subset-mean follow-up shares native A controls but has a different score reduction; its group average is not the SCPP score used here."
 }

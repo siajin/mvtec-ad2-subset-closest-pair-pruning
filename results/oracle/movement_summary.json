@@ -30,8 +30,8 @@
       "projection_round1_fraction": 1.0,
       "prototype_same_feature_via_unchanged_origin_lower_bound": {
         "SuperADD_style": 0.14617,
-        "CP100": 0.43803,
-        "CP100_PLUS_LOWTAIL": 0.43803,
+        "SCPP": 0.43803,
+        "SCPP_PLUS_LOWTAIL": 0.43803,
         "KMEANS_TWO_STAGE": 0.21372,
         "KC100": 0.20838,
         "PROJECTED": 0.43803
@@ -67,8 +67,8 @@
       "projection_round1_fraction": 1.0,
       "prototype_same_feature_via_unchanged_origin_lower_bound": {
         "SuperADD_style": 0.07257,
-        "CP100": 0.3008,
-        "CP100_PLUS_LOWTAIL": 0.3008,
+        "SCPP": 0.3008,
+        "SCPP_PLUS_LOWTAIL": 0.3008,
         "KMEANS_TWO_STAGE": 0.13336,
         "KC100": 0.12963,
         "PROJECTED": 0.3008
@@ -104,8 +104,8 @@
       "projection_round1_fraction": 1.0,
       "prototype_same_feature_via_unchanged_origin_lower_bound": {
         "SuperADD_style": 0.09009,
-        "CP100": 0.32985,
-        "CP100_PLUS_LOWTAIL": 0.32985,
+        "SCPP": 0.32985,
+        "SCPP_PLUS_LOWTAIL": 0.32985,
         "KMEANS_TWO_STAGE": 0.1322,
         "KC100": 0.12686,
         "PROJECTED": 0.32985
@@ -141,8 +141,8 @@
       "projection_round1_fraction": 0.99999,
       "prototype_same_feature_via_unchanged_origin_lower_bound": {
         "SuperADD_style": 0.05358,
-        "CP100": 0.23772,
-        "CP100_PLUS_LOWTAIL": 0.23772,
+        "SCPP": 0.23772,
+        "SCPP_PLUS_LOWTAIL": 0.23772,
         "KMEANS_TWO_STAGE": 0.07737,
         "KC100": 0.07283,
         "PROJECTED": 0.23772
@@ -178,8 +178,8 @@
       "projection_round1_fraction": 1.0,
       "prototype_same_feature_via_unchanged_origin_lower_bound": {
         "SuperADD_style": 0.10315,
-        "CP100": 0.40383,
-        "CP100_PLUS_LOWTAIL": 0.40383,
+        "SCPP": 0.40383,
+        "SCPP_PLUS_LOWTAIL": 0.40383,
         "KMEANS_TWO_STAGE": 0.21278,
         "KC100": 0.20211,
         "PROJECTED": 0.40383
@@ -215,8 +215,8 @@
       "projection_round1_fraction": 1.0,
       "prototype_same_feature_via_unchanged_origin_lower_bound": {
         "SuperADD_style": 0.04393,
-        "CP100": 0.25954,
-        "CP100_PLUS_LOWTAIL": 0.25954,
+        "SCPP": 0.25954,
+        "SCPP_PLUS_LOWTAIL": 0.25954,
         "KMEANS_TWO_STAGE": 0.12112,
         "KC100": 0.1164,
         "PROJECTED": 0.25954
@@ -252,8 +252,8 @@
       "projection_round1_fraction": 1.0,
       "prototype_same_feature_via_unchanged_origin_lower_bound": {
         "SuperADD_style": 0.08837,
-        "CP100": 0.35727,
-        "CP100_PLUS_LOWTAIL": 0.35727,
+        "SCPP": 0.35727,
+        "SCPP_PLUS_LOWTAIL": 0.35727,
         "KMEANS_TWO_STAGE": 0.15457,
         "KC100": 0.15021,
         "PROJECTED": 0.35727
@@ -289,8 +289,8 @@
       "projection_round1_fraction": 1.0,
       "prototype_same_feature_via_unchanged_origin_lower_bound": {
         "SuperADD_style": 0.05958,
-        "CP100": 0.23717,
-        "CP100_PLUS_LOWTAIL": 0.23717,
+        "SCPP": 0.23717,
+        "SCPP_PLUS_LOWTAIL": 0.23717,
         "KMEANS_TWO_STAGE": 0.10376,
         "KC100": 0.09758,
         "PROJECTED": 0.23717
@@ -326,8 +326,8 @@
       "projection_round1_fraction": 1.0,
       "prototype_same_feature_via_unchanged_origin_lower_bound": {
         "SuperADD_style": 0.19881,
-        "CP100": 0.51424,
-        "CP100_PLUS_LOWTAIL": 0.51424,
+        "SCPP": 0.51424,
+        "SCPP_PLUS_LOWTAIL": 0.51424,
         "KMEANS_TWO_STAGE": 0.37693,
         "KC100": 0.3717,
         "PROJECTED": 0.51424
@@ -363,8 +363,8 @@
       "projection_round1_fraction": 1.0,
       "prototype_same_feature_via_unchanged_origin_lower_bound": {
         "SuperADD_style": 0.16063,
-        "CP100": 0.43165,
-        "CP100_PLUS_LOWTAIL": 0.43165,
+        "SCPP": 0.43165,
+        "SCPP_PLUS_LOWTAIL": 0.43165,
         "KMEANS_TWO_STAGE": 0.25078,
         "KC100": 0.24347,
         "PROJECTED": 0.43165
@@ -400,8 +400,8 @@
       "projection_round1_fraction": 1.0,
       "prototype_same_feature_via_unchanged_origin_lower_bound": {
         "SuperADD_style": 0.18173,
-        "CP100": 0.47713,
-        "CP100_PLUS_LOWTAIL": 0.47713,
+        "SCPP": 0.47713,
+        "SCPP_PLUS_LOWTAIL": 0.47713,
         "KMEANS_TWO_STAGE": 0.29592,
         "KC100": 0.28525,
         "PROJECTED": 0.47713
@@ -437,8 +437,8 @@
       "projection_round1_fraction": 1.0,
       "prototype_same_feature_via_unchanged_origin_lower_bound": {
         "SuperADD_style": 0.12073,
-        "CP100": 0.36725,
-        "CP100_PLUS_LOWTAIL": 0.36725,
+        "SCPP": 0.36725,
+        "SCPP_PLUS_LOWTAIL": 0.36725,
         "KMEANS_TWO_STAGE": 0.13801,
         "KC100": 0.12957,
         "PROJECTED": 0.36725
@@ -474,8 +474,8 @@
       "projection_round1_fraction": 1.0,
       "prototype_same_feature_via_unchanged_origin_lower_bound": {
         "SuperADD_style": 0.06912,
-        "CP100": 0.32794,
-        "CP100_PLUS_LOWTAIL": 0.32794,
+        "SCPP": 0.32794,
+        "SCPP_PLUS_LOWTAIL": 0.32794,
         "KMEANS_TWO_STAGE": 0.22549,
         "KC100": 0.21665,
         "PROJECTED": 0.32794
@@ -511,8 +511,8 @@
       "projection_round1_fraction": 1.0,
       "prototype_same_feature_via_unchanged_origin_lower_bound": {
         "SuperADD_style": 0.08122,
-        "CP100": 0.25737,
-        "CP100_PLUS_LOWTAIL": 0.25737,
+        "SCPP": 0.25737,
+        "SCPP_PLUS_LOWTAIL": 0.25737,
         "KMEANS_TWO_STAGE": 0.17795,
         "KC100": 0.17148,
         "PROJECTED": 0.25737
@@ -548,8 +548,8 @@
       "projection_round1_fraction": 1.0,
       "prototype_same_feature_via_unchanged_origin_lower_bound": {
         "SuperADD_style": 0.09478,
-        "CP100": 0.32165,
-        "CP100_PLUS_LOWTAIL": 0.32165,
+        "SCPP": 0.32165,
+        "SCPP_PLUS_LOWTAIL": 0.32165,
         "KMEANS_TWO_STAGE": 0.2316,
         "KC100": 0.22362,
         "PROJECTED": 0.32165
@@ -585,8 +585,8 @@
       "projection_round1_fraction": 1.0,
       "prototype_same_feature_via_unchanged_origin_lower_bound": {
         "SuperADD_style": 0.06445,
-        "CP100": 0.23882,
-        "CP100_PLUS_LOWTAIL": 0.23882,
+        "SCPP": 0.23882,
+        "SCPP_PLUS_LOWTAIL": 0.23882,
         "KMEANS_TWO_STAGE": 0.12477,
         "KC100": 0.1174,
         "PROJECTED": 0.23882
@@ -622,8 +622,8 @@
       "projection_round1_fraction": 1.0,
       "prototype_same_feature_via_unchanged_origin_lower_bound": {
         "SuperADD_style": 0.1409,
-        "CP100": 0.3688,
-        "CP100_PLUS_LOWTAIL": 0.3688,
+        "SCPP": 0.3688,
+        "SCPP_PLUS_LOWTAIL": 0.3688,
         "KMEANS_TWO_STAGE": 0.30166,
         "KC100": 0.29708,
         "PROJECTED": 0.3688
@@ -659,8 +659,8 @@
       "projection_round1_fraction": 1.0,
       "prototype_same_feature_via_unchanged_origin_lower_bound": {
         "SuperADD_style": 0.08187,
-        "CP100": 0.24488,
-        "CP100_PLUS_LOWTAIL": 0.24488,
+        "SCPP": 0.24488,
+        "SCPP_PLUS_LOWTAIL": 0.24488,
         "KMEANS_TWO_STAGE": 0.16822,
         "KC100": 0.16329,
         "PROJECTED": 0.24488
@@ -696,8 +696,8 @@
       "projection_round1_fraction": 1.0,
       "prototype_same_feature_via_unchanged_origin_lower_bound": {
         "SuperADD_style": 0.13518,
-        "CP100": 0.33259,
-        "CP100_PLUS_LOWTAIL": 0.33259,
+        "SCPP": 0.33259,
+        "SCPP_PLUS_LOWTAIL": 0.33259,
         "KMEANS_TWO_STAGE": 0.24352,
         "KC100": 0.23727,
         "PROJECTED": 0.33259
@@ -733,8 +733,8 @@
       "projection_round1_fraction": 1.0,
       "prototype_same_feature_via_unchanged_origin_lower_bound": {
         "SuperADD_style": 0.06787,
-        "CP100": 0.21012,
-        "CP100_PLUS_LOWTAIL": 0.21012,
+        "SCPP": 0.21012,
+        "SCPP_PLUS_LOWTAIL": 0.21012,
         "KMEANS_TWO_STAGE": 0.10905,
         "KC100": 0.10168,
         "PROJECTED": 0.21012
@@ -770,8 +770,8 @@
       "projection_round1_fraction": 1.0,
       "prototype_same_feature_via_unchanged_origin_lower_bound": {
         "SuperADD_style": 0.23602,
-        "CP100": 0.57549,
-        "CP100_PLUS_LOWTAIL": 0.57549,
+        "SCPP": 0.57549,
+        "SCPP_PLUS_LOWTAIL": 0.57549,
         "KMEANS_TWO_STAGE": 0.44261,
         "KC100": 0.43956,
         "PROJECTED": 0.57549
@@ -807,8 +807,8 @@
       "projection_round1_fraction": 1.0,
       "prototype_same_feature_via_unchanged_origin_lower_bound": {
         "SuperADD_style": 0.20893,
-        "CP100": 0.5229,
-        "CP100_PLUS_LOWTAIL": 0.5229,
+        "SCPP": 0.5229,
+        "SCPP_PLUS_LOWTAIL": 0.5229,
         "KMEANS_TWO_STAGE": 0.38713,
         "KC100": 0.3828,
         "PROJECTED": 0.5229
@@ -844,8 +844,8 @@
       "projection_round1_fraction": 1.0,
       "prototype_same_feature_via_unchanged_origin_lower_bound": {
         "SuperADD_style": 0.21407,
-        "CP100": 0.5281,
-        "CP100_PLUS_LOWTAIL": 0.5281,
+        "SCPP": 0.5281,
+        "SCPP_PLUS_LOWTAIL": 0.5281,
         "KMEANS_TWO_STAGE": 0.39606,
         "KC100": 0.39152,
         "PROJECTED": 0.5281
@@ -881,8 +881,8 @@
       "projection_round1_fraction": 1.0,
       "prototype_same_feature_via_unchanged_origin_lower_bound": {
         "SuperADD_style": 0.13617,
-        "CP100": 0.36981,
-        "CP100_PLUS_LOWTAIL": 0.36981,
+        "SCPP": 0.36981,
+        "SCPP_PLUS_LOWTAIL": 0.36981,
         "KMEANS_TWO_STAGE": 0.25268,
         "KC100": 0.24634,
         "PROJECTED": 0.36981
@@ -918,8 +918,8 @@
       "projection_round1_fraction": 1.0,
       "prototype_same_feature_via_unchanged_origin_lower_bound": {
         "SuperADD_style": 0.12088,
-        "CP100": 0.37994,
-        "CP100_PLUS_LOWTAIL": 0.37994,
+        "SCPP": 0.37994,
+        "SCPP_PLUS_LOWTAIL": 0.37994,
         "KMEANS_TWO_STAGE": 0.23118,
         "KC100": 0.22188,
         "PROJECTED": 0.37994
@@ -955,8 +955,8 @@
       "projection_round1_fraction": 1.0,
       "prototype_same_feature_via_unchanged_origin_lower_bound": {
         "SuperADD_style": 0.06353,
-        "CP100": 0.28572,
-        "CP100_PLUS_LOWTAIL": 0.28572,
+        "SCPP": 0.28572,
+        "SCPP_PLUS_LOWTAIL": 0.28572,
         "KMEANS_TWO_STAGE": 0.15327,
         "KC100": 0.14519,
         "PROJECTED": 0.28572
@@ -992,8 +992,8 @@
       "projection_round1_fraction": 1.0,
       "prototype_same_feature_via_unchanged_origin_lower_bound": {
         "SuperADD_style": 0.06894,
-        "CP100": 0.3112,
-        "CP100_PLUS_LOWTAIL": 0.3112,
+        "SCPP": 0.3112,
+        "SCPP_PLUS_LOWTAIL": 0.3112,
         "KMEANS_TWO_STAGE": 0.19174,
         "KC100": 0.18417,
         "PROJECTED": 0.3112
@@ -1029,8 +1029,8 @@
       "projection_round1_fraction": 1.0,
       "prototype_same_feature_via_unchanged_origin_lower_bound": {
         "SuperADD_style": 0.04786,
-        "CP100": 0.21232,
-        "CP100_PLUS_LOWTAIL": 0.21232,
+        "SCPP": 0.21232,
+        "SCPP_PLUS_LOWTAIL": 0.21232,
         "KMEANS_TWO_STAGE": 0.08325,
         "KC100": 0.078,
         "PROJECTED": 0.21232
@@ -1066,8 +1066,8 @@
       "projection_round1_fraction": 1.0,
       "prototype_same_feature_via_unchanged_origin_lower_bound": {
         "SuperADD_style": 0.07994,
-        "CP100": 0.4025,
-        "CP100_PLUS_LOWTAIL": 0.4025,
+        "SCPP": 0.4025,
+        "SCPP_PLUS_LOWTAIL": 0.4025,
         "KMEANS_TWO_STAGE": 0.25556,
         "KC100": 0.24977,
         "PROJECTED": 0.4025
@@ -1103,8 +1103,8 @@
       "projection_round1_fraction": 1.0,
       "prototype_same_feature_via_unchanged_origin_lower_bound": {
         "SuperADD_style": 0.0695,
-        "CP100": 0.34529,
-        "CP100_PLUS_LOWTAIL": 0.34529,
+        "SCPP": 0.34529,
+        "SCPP_PLUS_LOWTAIL": 0.34529,
         "KMEANS_TWO_STAGE": 0.1897,
         "KC100": 0.18573,
         "PROJECTED": 0.34529
@@ -1140,8 +1140,8 @@
       "projection_round1_fraction": 1.0,
       "prototype_same_feature_via_unchanged_origin_lower_bound": {
         "SuperADD_style": 0.12376,
-        "CP100": 0.39785,
-        "CP100_PLUS_LOWTAIL": 0.39785,
+        "SCPP": 0.39785,
+        "SCPP_PLUS_LOWTAIL": 0.39785,
         "KMEANS_TWO_STAGE": 0.2352,
         "KC100": 0.22844,
         "PROJECTED": 0.39785
@@ -1177,8 +1177,8 @@
       "projection_round1_fraction": 1.0,
       "prototype_same_feature_via_unchanged_origin_lower_bound": {
         "SuperADD_style": 0.05661,
-        "CP100": 0.25659,
-        "CP100_PLUS_LOWTAIL": 0.25659,
+        "SCPP": 0.25659,
+        "SCPP_PLUS_LOWTAIL": 0.25659,
         "KMEANS_TWO_STAGE": 0.07518,
         "KC100": 0.07025,
         "PROJECTED": 0.25659

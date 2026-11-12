@@ -8,7 +8,7 @@ from __future__ import annotations
 import numpy as np
 import torch
 
-from research.cp100.cp_select import prune_subset
+from research.scpp.cp_select import prune_subset
 
 
 def precision_settings() -> None:

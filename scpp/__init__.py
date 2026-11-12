@@ -1,4 +1,4 @@
-"""CP100 representative selection for frozen normal feature pools."""
+"""SCPP representative selection for frozen normal feature pools."""
 from .selection import select_representatives
 
 __all__ = ['select_representatives']

@@ -35,7 +35,7 @@ def summarize():
         print(f"{row['method']}: pAUROC={values[0]}, AU-PRO={values[1]}")
     patch = rows('results/patchcore/per_category.csv')
     pm = json.loads((ROOT/'results/patchcore/macro.json').read_text(encoding='utf-8'))
-    for method in ['CP100','coreset']:
+    for method in ['SCPP','coreset']:
         group = [r for r in patch if r['method'] == method]
         assert len(group) == 8
         for key,value in pm[method].items():

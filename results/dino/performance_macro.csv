@@ -1,7 +1,7 @@
-﻿method,categories,pAUROC_005_percent,AU_PRO_005_percent,delta_pAUROC_vs_CP_pp,delta_AU_PRO_vs_CP_pp,source
+method,categories,pAUROC_005_percent,AU_PRO_005_percent,delta_pAUROC_vs_CP_pp,delta_AU_PRO_vs_CP_pp,source
 SuperADD_style,8,83.5931162297638,51.22789789938188,-0.6797700448987198,-0.45802138125928815,historical qualified same-scope evaluation; not new common-runtime inference
-CP100,8,84.27288627466251,51.685919280641166,0.0,0.0,historical qualified same-scope evaluation; not new common-runtime inference
-CP100_PLUS_LOWTAIL,8,84.24414201923729,51.95935290887546,-0.028744255425228182,0.2734336282342875,historical qualified same-scope evaluation; not new common-runtime inference
+SCPP,8,84.27288627466251,51.685919280641166,0.0,0.0,historical qualified same-scope evaluation; not new common-runtime inference
+SCPP_PLUS_LOWTAIL,8,84.24414201923729,51.95935290887546,-0.028744255425228182,0.2734336282342875,historical qualified same-scope evaluation; not new common-runtime inference
 KMEANS_TWO_STAGE,8,84.12403112618081,49.71503985169502,-0.148855148481708,-1.9708794289461484,historical qualified same-scope evaluation; not new common-runtime inference
 KC100,8,84.2080241406866,,-0.06486213397591811,,historical qualified same-scope evaluation; not new common-runtime inference
 LEARNED,8,96.34871165790082,97.75240498047636,12.075825383238303,46.06648569983519,independent oracle evaluation

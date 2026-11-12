@@ -1,4 +1,4 @@
-"""Verify public payload SHA256 and byte-preserved historical source copies."""
+"""Verify public payload and derivatives against their declared SHA256."""
 import hashlib
 import json
 from pathlib import Path
@@ -20,7 +20,9 @@ def main():
     for row in source['artifacts']:
         if 'public_copy' in row:
             assert sha(ROOT/row['public_copy']) == row['sha256'], row['public_copy']
-    print(f"Verified {len(manifest['files'])} release files and preserved source copies.")
+        if 'public_derivative' in row:
+            assert sha(ROOT/row['public_derivative']) == row['published_sha256'], row['public_derivative']
+    print(f"Verified {len(manifest['files'])} release files and source-linked derivatives.")
 
 
 if __name__ == '__main__':

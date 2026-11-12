@@ -1,10 +1,10 @@
-# CP100 방법 상세
+# SCPP 방법 상세
 
 ## 문제 설정
 
 정상 FIT 특징 $X=\{x_i\}_{i=1}^N$에서 예산 $K$의 실제 표본 부분집합을 고른다. 연구의 기본 DINO 설정은 raw1280D, 범주·층별 $K=100000$이다. 학습으로 backbone이나 특징 좌표를 바꾸지 않는다. global FIT ID는 고정된 source 순서로 특징을 펼친 행 번호다. 파일 이름이 같아도 source 순서가 다르면 ID를 직접 비교할 수 없다.
 
-## CP100의 실제 알고리즘
+## SCPP의 실제 알고리즘
 
 ```text
 rng = RandomState(42)
@@ -38,9 +38,9 @@ repeat 100 times:
 |---|---|---|
 | SuperADD-style | k-NN 기반 local density score가 작은 후보 우선 | 희소 영역을 보존하는 방향 |
 | k-center / PatchCore coreset | 현재 대표 집합에서 먼 후보 추가 | 최악 coverage 거리 축소를 지향 |
-| CP100 | 가까운 쌍에서 escape distance가 작은 끝점 제거 | 중복을 줄이는 삭제 방식 |
+| SCPP | 가까운 쌍에서 escape distance가 작은 끝점 제거 | 중복을 줄이는 삭제 방식 |
 
-같은 거리 공간과 예산을 쓰더라도 세 정책의 최종 대표는 다를 수 있다. CP100에서 cutoff·tie·부분집합·제거 순서가 바뀌면 다른 selector다.
+같은 거리 공간과 예산을 쓰더라도 세 정책의 최종 대표는 다를 수 있다. SCPP에서 cutoff·tie·부분집합·제거 순서가 바뀌면 다른 selector다.
 
 ## 거리와 연산 순서
 
@@ -64,8 +64,8 @@ d2 = (q.square().sum(1, keepdim=True)
 
 ## 변형의 구분
 
-- **CP100 + SA 저거리 추가:** CP100을 유지하고 추가 FIT 표본을 더해100k를 초과한다. 동일 예산 실험으로 보지 않는다.
-- **K-means 2단계:** KMeans100 → 군집 내부 CP로 총200k → 전역 CP100k. centroid100k 최적화와 다르다.
+- **SCPP + SA 저거리 추가:** SCPP를 유지하고 추가 FIT 표본을 더해100k를 초과한다. 동일 예산 실험으로 보지 않는다.
+- **K-means 2단계:** KMeans100 → 군집 내부 CP로 총200k → 전역 SCPP 100k. centroid100k 최적화와 다르다.
 - **subset-mean 후속 실험:** 같은 representative lineage라도 score의 reduction이 다르다. 본 공개 표는 global1NN이다.
 - **PatchCore 이식:** 동일128D projection 공간에서 대표를 고르고1024D 원본 특징으로 squared-L2 score를 구한다. raw1280D DINO bank와 다르다.
-- **GT 학습형/치환형:** 진단용이며 정상-only CP100 selector 자체와 구분한다.
+- **GT 학습형/치환형:** 진단용이며 정상-only SCPP selector 자체와 구분한다.

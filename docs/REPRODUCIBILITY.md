@@ -3,7 +3,7 @@
 ## 공개본에서 할 수 있는 작업
 
 - CSV/JSON에서 8범주 평균, 대표 ID 공유율, 교차 기하 통계를 검산한다.
-- 고정된 순서의 정상 FP16 특징 pool에 CP100을 적용한다.
+- 고정된 순서의 정상 FP16 특징 pool에 SCPP를 적용한다.
 - 작은 합성 데이터로 pruning, native 1NN, oracle gradient·고유 FIT 치환, 양방향 교차 NN을 확인한다.
 
 원본 이미지에서 표의 모든 수치를 자동 재생성하는 완결 benchmark 배포본은 아니다. 이미지·GT·가중치·추출 cache·개별 source manifest·대형 bank·score map은 포함하지 않는다.
@@ -27,7 +27,7 @@ python -m unittest discover -s tests -v
 
 ```python
 import numpy as np
-from cp100 import select_representatives
+from scpp import select_representatives
 
 fit = np.load('normal_fit.npy', mmap_mode='r', allow_pickle=False)
 # [N,1280], frozen float16, original source/patch ordering
@@ -39,8 +39,8 @@ np.save('bank.npy', np.asarray(fit[ids]))
 CLI도 같은 함수를 사용한다.
 
 ```bash
-python -m cp100 select --features normal_fit.npy --output selected_ids.npy --device cpu
-python -m cp100 score --queries query.npy --bank bank.npy --output score.npy --device cpu
+python -m scpp select --features normal_fit.npy --output selected_ids.npy --device cpu
+python -m scpp score --queries query.npy --bank bank.npy --output score.npy --device cpu
 ```
 
 출력 JSON에 입력·출력 SHA, seed, chunk, 실제 Torch/NumPy, device를 기록하고 기존 출력을 덮어쓰지 않는다. `--target`·`--subsets`를 줄인 toy는 별도 설정이며 100k benchmark 결과로 표기하지 않는다. FP32 특징을 조용히 재양자화하지 않도록 선택 API는 FP16 pool만 받는다.
@@ -55,7 +55,7 @@ python -m cp100 score --queries query.npy --bank bank.npy --output score.npy --d
 4. 아래처럼 분리된 stage 환경과 동결 resize 경로.
 5. 정상 control 통과 후 수행하는 별도 GT 평가.
 
-| 단계 | 검증된 CP 계보 환경 | 계약 |
+| 단계 | 검증된 SCPP 계보 환경 | 계약 |
 |---|---|---|
 | native 거리 | Linux H100, Torch 2.10.0+cu128 | FP32/highest, TF32/autocast off, query4096/full-bank100k, image batch8 |
 | dense reference | Linux CPU, Torch 2.9.1+cu128 build | 실제 연산은 CPU, frozen bilinear |
@@ -64,12 +64,12 @@ python -m cp100 score --queries query.npy --bank bank.npy --output score.npy --d
 
 관련 stage의 NumPy는 2.1.3, OpenCV는 4.12.0이다. 저장 FP16, 계산 FP32, 평가 FP16은 다른 계약이다. GEMM·min·sqrt·나눗셈·평균 순서와 chunk·batch를 지킨다. 이 환경을 KC100이나 별도 PatchCore producer에 자동 적용하지 않는다.
 
-subset-mean 후속 실험은 같은 native A control을 공유하지만 score reduction이 다르다. 그 registry의 group 평균을 여기 main CP100의 추론 정의로 복사하지 않는다. 본 대표 선정 연구는 can 정렬을 사용하지 않았으며, 공개 작업에서도 alignment를 재계산하지 않았다.
+subset-mean 후속 실험은 같은 native A control을 공유하지만 score reduction이 다르다. 그 registry의 group 평균을 여기 main SCPP의 추론 정의로 복사하지 않는다. 본 대표 선정 연구는 can 정렬을 사용하지 않았으며, 공개 작업에서도 alignment를 재계산하지 않았다.
 
 ## 소스와 결과 추적
 
-[SOURCE_ARTIFACTS.json](../provenance/SOURCE_ARTIFACTS.json)은 원본의 논리적 위치·SHA256·크기·용도를 기록한다. `public_copy`가 있는 파일은 원본 바이트를 복사했다. 나머지 CSV/JSON은 필요한 필드만 추출했다. 원본 실험이나 부분 완료 기록을 수정하지 않았다.
+[SOURCE_ARTIFACTS.json](../provenance/SOURCE_ARTIFACTS.json)은 원본의 source ID·SHA256·크기·용도를 기록한다. 명칭 변경 전 원본 SHA와 공개 파일 SHA를 별도로 보존한다. `public_derivative`는 명칭·범례를 통일한 공개본이다. 원본의 위치는 비공개 출처 대장에 남기고 공개본은 source ID로 연결한다. 결과의 수치와 알고리즘은 변경하지 않았다. 원본 실험이나 부분 완료 기록을 수정하지 않았다.
 
-`research/cp100/`은 `MVTEC_GRID_ROOT` 아래 원래 cache 구조와 manifest를 전제하는 producer snapshot이다. 일반적인 배열 입력에는 `cp100/` adapter를 사용한다. `research/oracle/`은 핵심 함수 보존본이며 전체 학습 launcher는 아니다.
+`research/scpp/`은 `MVTEC_GRID_ROOT` 아래 원래 cache 구조와 manifest를 전제하는 producer snapshot이다. 일반적인 배열 입력에는 `scpp/` adapter를 사용한다. `research/oracle/`은 핵심 함수 보존본이며 전체 학습 launcher는 아니다.
 
 [RELEASE_SHA256.json](../provenance/RELEASE_SHA256.json)은 자체 파일을 제외한 게시 payload를 고정한다. 이번 발행은 새 학습·GT 평가·원격 할당 없이 기존 결과와 짧은 CPU 제어만 사용했다.

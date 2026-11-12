@@ -1,4 +1,4 @@
-"""C1_PREDICT: exact raw1280 1-NN maps for the approved CP100 banks.
+"""C1_PREDICT: exact raw1280 1-NN maps for the approved SCPP banks.
 
 Consumes C0_SELECT read-only and never opens ground truth.
 """
@@ -204,7 +204,7 @@ def run_unit(category: str, layer: int, query_chunk: int, bank_chunk: int, image
     atomic_npy(unit / "public_seconds.npy", np.asarray(timings, np.float64))
     atomic_json(unit / "records.json", records)
     atomic_json(unit / "MODEL.json", {
-        "category": category, "layer": layer, "method": "CP100-subset raw1280 exact 1-NN",
+        "category": category, "layer": layer, "method": "SCPP-subset raw1280 exact 1-NN",
         "dimension": DIM, "bank_count": TARGET, "selected_ids_sha256": select_sha,
         "bank_content_sha256": bank_content_sha, "score": "min raw Euclidean / sqrt(1280)",
         "calibration_shape": list(calibration.shape), "public_shape": list(public.shape),
